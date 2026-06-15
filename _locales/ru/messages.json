@@ -1,0 +1,70 @@
+{
+  "extName": {
+    "message": "POE2 - Сохранение Фильтров Торговли",
+    "description": "The name of the extension."
+  },
+  "extDesc": {
+    "message": "Сохраняйте поисковые фильтры на сайте торговли Path of Exile 2",
+    "description": "The description of the extension."
+  },
+  "title": {
+    "message": "Сохраненные фильтры - POE2",
+    "description": "Header title of the popup."
+  },
+  "tradeLink": {
+    "message": "Сайт торговли POE2",
+    "description": "Link to the PoE2 trade website."
+  },
+  "tutorialVideo": {
+    "message": "Видео-инструкция",
+    "description": "Link to the tutorial video."
+  },
+  "developedBy": {
+    "message": "Разработчик: Shinry",
+    "description": "Developer credit text."
+  },
+  "donatePaypal": {
+    "message": "Поддержать через Paypal",
+    "description": "Paypal donation link text."
+  },
+  "disclaimer": {
+    "message": "Этот инструмент разработан участником сообщества и не связан с Grinding Gear Games.",
+    "description": "Disclaimer text at the bottom of the popup."
+  },
+  "noSavedUrls": {
+    "message": "Нет сохраненных фильтров.",
+    "description": "Text shown when there are no saved filters."
+  },
+  "filterLink": {
+    "message": "Открыть фильтр",
+    "description": "Text of the hyperlink pointing to the saved search page."
+  },
+  "editDescriptionPlaceholder": {
+    "message": "Нажмите, чтобы добавить описание",
+    "description": "Default description text when a saved search doesn't have one."
+  },
+  "placeholderInput": {
+    "message": "Введите описание...",
+    "description": "Placeholder for the input field when editing filter description."
+  },
+  "saveFilterButton": {
+    "message": "Сохранить фильтр",
+    "description": "Button text injected into the PoE2 trade page."
+  },
+  "promptFilterName": {
+    "message": "Введите название фильтра:",
+    "description": "Prompt dialog message when clicking Save Filter."
+  },
+  "promptDefaultName": {
+    "message": "Фильтр",
+    "description": "Default name prefix for saved filters."
+  },
+  "saveSuccess": {
+    "message": "Фильтр сохранен! Откройте расширение, чтобы просмотреть или изменить его.",
+    "description": "Alert message shown after successfully saving a filter."
+  },
+  "alreadySaved": {
+    "message": "Этот фильтр уже сохранен!",
+    "description": "Alert message when trying to save an already saved URL."
+  }
+}

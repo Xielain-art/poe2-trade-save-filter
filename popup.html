@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,104 @@
 </head>
 <body>
   <div class="popup-container">
-    <div class="top-popup">
-      <a class="trade2-website" target="_blank" href="https://www.pathofexile.com/trade2">Poe2 trade link</a>
-      <a class="trade2-website" target="_blank" href="https://www.youtube.com/watch?v=KFDwpAs9ecs">Tutorial video</a>
+    <!-- Header with controls -->
+    <div class="top-controls">
+      <div class="header-left">
+        <a class="nav-btn" target="_blank" href="https://www.pathofexile.com/trade2" data-i18n="tradeLink">Trade POE2</a>
+        <button id="infoBtn" class="nav-btn" data-i18n="tutorialVideo">Info</button>
+      </div>
+      <div class="header-right">
+        <!-- View Mode Switcher -->
+        <div class="view-switcher">
+          <button id="viewListBtn" class="switcher-btn active" data-i18n-title="viewList"><i class="fa-solid fa-list"></i></button>
+          <button id="viewGridBtn" class="switcher-btn" data-i18n-title="viewGrid"><i class="fa-solid fa-table-cells-large"></i></button>
+        </div>
+        <!-- Language Switcher Custom Dropdown -->
+        <div class="custom-select" id="langSelectContainer">
+          <div class="select-trigger" id="langSelectTrigger">
+            <img src="https://flagcdn.com/w20/gb.png" id="selectedLangFlag" alt="Flag">
+            <span id="selectedLangText">EN</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="select-options" id="langSelectOptions" style="display: none;">
+            <div class="select-option" data-lang="en">
+              <img src="https://flagcdn.com/w20/gb.png" alt="EN"> <span>EN</span>
+            </div>
+            <div class="select-option" data-lang="ru">
+              <img src="https://flagcdn.com/w20/ru.png" alt="RU"> <span>RU</span>
+            </div>
+            <div class="select-option" data-lang="fr">
+              <img src="https://flagcdn.com/w20/fr.png" alt="FR"> <span>FR</span>
+            </div>
+            <div class="select-option" data-lang="pt">
+              <img src="https://flagcdn.com/w20/br.png" alt="PT"> <span>PT</span>
+            </div>
+            <div class="select-option" data-lang="de">
+              <img src="https://flagcdn.com/w20/de.png" alt="DE"> <span>DE</span>
+            </div>
+            <div class="select-option" data-lang="es">
+              <img src="https://flagcdn.com/w20/es.png" alt="ES"> <span>ES</span>
+            </div>
+            <div class="select-option" data-lang="th">
+              <img src="https://flagcdn.com/w20/th.png" alt="TH"> <span>TH</span>
+            </div>
+            <div class="select-option" data-lang="ja">
+              <img src="https://flagcdn.com/w20/jp.png" alt="JA"> <span>JA</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h2>Save Filter - POE2</h2>
+
+    <h2 data-i18n="title">Saved Filters</h2>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchBarInput" class="search-input" data-i18n-placeholder="searchPlaceholder" placeholder="Search filters...">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+    
+    <!-- Collapsible Instruction Panel -->
+    <div id="infoBlock" class="info-block" style="display: none;">
+      <h4 data-i18n="instructionTitle">How to use:</h4>
+      <ul>
+        <li data-i18n="instructionStep1">1. Perform a search on the PoE2 Trade site.</li>
+        <li data-i18n="instructionStep2">2. Click the green 'Save Filter' button.</li>
+        <li data-i18n="instructionStep3">3. Enter a name, select/create a folder, and save!</li>
+      </ul>
+    </div>
+    
+    <!-- Action controls: add group -->
+    <div class="action-controls">
+      <button id="toggleAddGroupBtn" class="action-btn" data-i18n="createGroupBtn">+ Group</button>
+      <div id="addGroupContainer" class="add-group-container" style="display: none;">
+        <input type="text" id="newGroupNameInput" class="group-input" data-i18n-placeholder="newGroupPlaceholder" placeholder="New group name...">
+        <button id="saveNewGroupBtn" class="group-save-btn"><i class="fa-solid fa-check"></i></button>
+      </div>
+    </div>
+
     <hr>
+    
+    <!-- Filter items container -->
     <div id="savedUrlsContainer"></div>
+    
     <hr>
-    <p class="dev-by">Developed by Shinry</p>
-    <a class="github" href="https://github.com/LorenzoDv/poe2-trade-save-filter" target="_blank"><img src="assets/img/github.png" alt="github of the project"></a>
-    <div id="paypal">
-      <a class="trade2-website"  target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=E4S8B6PBMLSNG">Donate with Paypal</a>
+    
+    <!-- Footer developer credit -->
+    <div class="footer-section">
+      <a class="github-link" href="https://github.com/Xielain-art/poe2-trade-save-filter" target="_blank" id="devCredit" data-i18n="improvedBy">
+        Improved by Xielain-art (Original by Shinry)
+      </a>
+      <a class="github-icon" href="https://github.com/Xielain-art/poe2-trade-save-filter" target="_blank">
+        <img src="assets/img/github.png" alt="GitHub Logo">
+      </a>
+      <p class="disclaimer" data-i18n="disclaimer">
+        This tool was developed by a community member and is not affiliated with Grinding Gear Games.
+      </p>
     </div>
-    <p class="disclaimer">This tool was developed by a community member and is not affiliated with Grinding Gear Games.</p>
   </div>
+  
+  <script src="locales.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

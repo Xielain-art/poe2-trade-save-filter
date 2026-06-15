@@ -1,0 +1,70 @@
+{
+  "extName": {
+    "message": "POE2 - Save Trade Filter",
+    "description": "The name of the extension."
+  },
+  "extDesc": {
+    "message": "Save Filter for Path of Exile 2 Trade Site",
+    "description": "The description of the extension."
+  },
+  "title": {
+    "message": "Save Filter - POE2",
+    "description": "Header title of the popup."
+  },
+  "tradeLink": {
+    "message": "Poe2 trade link",
+    "description": "Link to the PoE2 trade website."
+  },
+  "tutorialVideo": {
+    "message": "Tutorial video",
+    "description": "Link to the tutorial video."
+  },
+  "developedBy": {
+    "message": "Developed by Shinry",
+    "description": "Developer credit text."
+  },
+  "donatePaypal": {
+    "message": "Donate with Paypal",
+    "description": "Paypal donation link text."
+  },
+  "disclaimer": {
+    "message": "This tool was developed by a community member and is not affiliated with Grinding Gear Games.",
+    "description": "Disclaimer text at the bottom of the popup."
+  },
+  "noSavedUrls": {
+    "message": "No saved URL.",
+    "description": "Text shown when there are no saved filters."
+  },
+  "filterLink": {
+    "message": "Filter link",
+    "description": "Text of the hyperlink pointing to the saved search page."
+  },
+  "editDescriptionPlaceholder": {
+    "message": "Edit to add a description",
+    "description": "Default description text when a saved search doesn't have one."
+  },
+  "placeholderInput": {
+    "message": "Enter description...",
+    "description": "Placeholder for the input field when editing filter description."
+  },
+  "saveFilterButton": {
+    "message": "Save Filter",
+    "description": "Button text injected into the PoE2 trade page."
+  },
+  "promptFilterName": {
+    "message": "Enter filter name:",
+    "description": "Prompt dialog message when clicking Save Filter."
+  },
+  "promptDefaultName": {
+    "message": "Filter",
+    "description": "Default name prefix for saved filters."
+  },
+  "saveSuccess": {
+    "message": "Filter saved! Click on the extension to view the filter.",
+    "description": "Alert message shown after successfully saving a filter."
+  },
+  "alreadySaved": {
+    "message": "This filter is already saved!",
+    "description": "Alert message when trying to save an already saved URL."
+  }
+}
